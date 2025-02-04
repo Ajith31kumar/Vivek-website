@@ -1,0 +1,135 @@
+/* Footer Top Section */
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px;
+    background-color: #222;
+    color: #fff;
+  }
+  
+  .footer-brand {
+    flex: 1;
+  }
+  
+  .footer-brand-title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .footer-brand-description {
+    font-size: 16px;
+    margin-top: 8px;
+  }
+  
+  .footer-links {
+    flex: 1;
+  }
+  
+  .footer-links-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 12px;
+  }
+  
+  .footer-links-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    margin: 8px 0;
+  }
+  
+  .footer-link:hover {
+    color: #E63946;
+  }
+  
+  .footer-cta {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .footer-cta-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  
+  .footer-register-button {
+    background-color: #E63946;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .footer-register-button:hover {
+    background-color: #c92b2b;
+  }
+  
+  /* Footer Bottom Section */
+  .footer-bottom {
+    text-align: center;
+    background-color: #333;
+    padding: 20px;
+    color: #fff;
+  }
+  
+  .footer-bottom-text {
+    margin-bottom: 12px;
+  }
+  
+  .footer-bottom-links {
+    margin-bottom: 12px;
+  }
+  
+  .footer-bottom-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 10px;
+  }
+  
+  .footer-bottom-separator {
+    color: #fff;
+    padding: 0 10px;
+  }
+  
+  .footer-bottom-link:hover {
+    color: #E63946;
+  }
+  
+  /* Footer Disclaimer */
+  .footer-disclaimer {
+    font-size: 14px;
+    color: #ccc;
+  }
+  
+  /* Back to Top Button */
+  .footer-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .back-to-top-button {
+    background-color: #333;
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .back-to-top-button:hover {
+    background-color: #555;
+  }
+  
+  .back-to-top-icon {
+    width: 24px;
+    height: 24px;
+  }
+  
