@@ -7,13 +7,14 @@
   height: 100vh;
   text-align: center;
   padding: 0 20px;
-  background: #060c3e;
+  background: #1D3557;
   color: white;
   position: relative;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .hero-section h1 {
-  font-size: 60px;
+  font-size: 50px;
   margin-bottom: 30px;
   font-weight: 800;
 }

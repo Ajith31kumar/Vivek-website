@@ -7,7 +7,7 @@ const SolutionSection = () => {
       <div className="container">
         <div className="section-header">
           <h2>
-            What You'll Learn in This <span className="highlight">Webinar</span>
+            What You'll Learn in This <span className="highlight1">Webinar</span>
           </h2>
         </div>
 

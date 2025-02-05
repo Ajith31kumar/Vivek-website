@@ -5,7 +5,14 @@
     text-align: center;
     margin-bottom: 30px;
   }
-  
+  .highlight {
+    color: #06D6A0 !important; 
+    font-weight: 700; /* font-bold */
+  }
+  .highlight1 {
+    color: #E63946 !important; 
+    font-weight: 700; /* font-bold */
+  }
   .solution-cards {
     display: flex;
     gap: 20px;
@@ -37,7 +44,7 @@
     align-items: center;
     text-align: center;
     padding: 2rem;
-    background-color: #f0f4f8;
+    
     border-radius: 1rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
@@ -57,4 +64,4 @@
     background: #c02736;
     transform: scale(1.05);
   }
-  
+ 

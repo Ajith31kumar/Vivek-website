@@ -7,7 +7,7 @@ const Webinar = () => {
       {/* Hero Section */}
       <section className="hero-section">
         <h1>
-          Train Your Eyes & Brain Like an <span className="highlight">Elite Athlete</span>
+          Train Your Eyes & Brain Like an <span className="highlight1">Elite Athlete</span>
         </h1>
         <p className="highlight">🔥 React Faster. Think Sharper. Dominate Every Game You Play.</p> 
         <p>🎯 Milliseconds decide winners. If your reaction speed is slow, you're already behind.</p>
@@ -26,6 +26,8 @@ const Webinar = () => {
         <a href="https://tagmango.app/36e3433a84" className="register-btn">
           👉 REGISTER FREE
         </a>
+        <div className="background-decorative"></div>
+      <div className="background-decorative right"></div>
       </section>
     </>
   );

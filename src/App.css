@@ -6,10 +6,7 @@ body {
   background-color: #1a1a1a;
   color: #fff;
 }
-.highlight {
-  color: #06D6A0;  /* Custom highlight color */
-  font-weight: 700; /* font-bold */
-}
+
 .register-btn:hover {
   background-color: #d62828; /* Darker red on hover */
   transform: scale(1.05);

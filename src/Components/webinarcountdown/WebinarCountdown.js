@@ -1,56 +1,79 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect } from "react";
 import "./WebinarCountdown.css";
 
-const WebinarCountdown = ({ targetDate }) => {
-  const calculateTimeLeft = useCallback(() => {
-    const difference = new Date(targetDate) - new Date();
-    if (difference <= 0) {
-      return { days: 0, hours: 0, minutes: 0, seconds: 0, ended: true };
-    }
-    return {
-      days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-      hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-      minutes: Math.floor((difference / (1000 * 60)) % 60),
-      seconds: Math.floor((difference / 1000) % 60),
-      ended: false,
-    };
-  }, [targetDate]);
-
-  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+const WebinarCountdown = () => {
+  const targetDate = new Date("2025-02-09T19:00:00").getTime();
+  const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setTimeLeft(calculateTimeLeft());
+      const now = new Date().getTime();
+      const difference = targetDate - now;
+
+      if (difference > 0) {
+        setTimeLeft({
+          days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+          hours: Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+          minutes: Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60)),
+          seconds: Math.floor((difference % (1000 * 60)) / 1000),
+        });
+      } else {
+        clearInterval(timer);
+      }
     }, 1000);
+
     return () => clearInterval(timer);
-  }, [calculateTimeLeft]); // Now calculateTimeLeft is stable
+  }, [targetDate]);
 
   return (
-    <div id="webinarDetails" className="webinar-dive p-8 md:p-12">
-      <div className="webinar-countdown text-center p-6 bg-neutral-800/50 rounded-xl mb-8">
-        <h3 className="text-xl font-bold text-white mb-4">⏳ Registration Closes In:</h3>
-        {timeLeft.ended ? (
-          <p className="expired-message text-red-500 text-lg">The webinar has already occurred.</p>
-        ) : (
-          <div className="countdown flex justify-center space-x-4 text-xl font-semibold">
-            <div className="countdown-box p-4 bg-[#E63946] rounded-lg">
-              <span className="block">{timeLeft.days}</span>
-              <span className="text-sm">Days</span>
-            </div>
-            <div className="countdown-box p-4 bg-[#E63946] rounded-lg">
-              <span className="block">{timeLeft.hours}</span>
-              <span className="text-sm">Hours</span>
-            </div>
-            <div className="countdown-box p-4 bg-[#E63946] rounded-lg">
-              <span className="block">{timeLeft.minutes}</span>
-              <span className="text-sm">Minutes</span>
-            </div>
-            <div className="countdown-box p-4 bg-[#E63946] rounded-lg">
-              <span className="block">{timeLeft.seconds}</span>
-              <span className="text-sm">Seconds</span>
-            </div>
+    <div className="container">
+      <div className="card">
+        <div className="details-grid">
+          <div className="detail-box">
+            <div className="icon">📅</div>
+            <h3>DATE</h3>
+            <p>9th Feb, 2025</p>
           </div>
-        )}
+          <div className="detail-box">
+            <div className="icon">⏰</div>
+            <h3>TIME</h3>
+            <p>7PM IST</p>
+          </div>
+          <div className="detail-box">
+            <div className="icon">🎥</div>
+            <h3>ACCESS</h3>
+            <p>Live on Zoom</p>
+          </div>
+        </div>
+
+        <div className="cta">
+          <p className="highlight-text">🚀 Serious athletes don't wait. Seats are LIMITED.</p>
+          <a href="https://tagmango.app/36e3433a84" className="cta-button">
+            👉 Secure Your Spot Now – 100% FREE
+          </a>
+        </div>
+      </div>
+
+      <div className="countdown">
+        <p className="countdown-text">⏳ Registration Closes In:</p>
+        <div className="countdown-timer">
+          <div className="countdown-box">
+            <span>{timeLeft.days}</span>
+            <p>Days</p>
+          </div>
+          <div className="countdown-box">
+            <span>{timeLeft.hours}</span>
+            <p>Hours</p>
+          </div>
+          <div className="countdown-box">
+            <span>{timeLeft.minutes}</span>
+            <p>Minutes</p>
+          </div>
+          <div className="countdown-box">
+            <span>{timeLeft.seconds}</span>
+            <p>Seconds</p>
+          </div>
+        </div>
       </div>
     </div>
   );
