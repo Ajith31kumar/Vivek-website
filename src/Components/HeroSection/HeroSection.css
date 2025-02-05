@@ -1,0 +1,80 @@
+.problem-section {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .problem-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #e63946;
+    margin-bottom: 20px;
+  }
+  
+  .problem-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .problem-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .problem-item {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px 15px;
+    border-radius: 8px;
+    width: fit-content;
+  }
+  
+  .problem-icon {
+    margin-right: 10px;
+    font-size: 20px;
+  }
+  
+  .problem-cta {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+  }
+  
+  .problem-highlight {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffd700;
+  }
+  
+  .problem-description {
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: 500;
+  }
+  
+  .problem-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #e63946;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 8px;
+    margin-top: 20px;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .problem-btn:hover {
+    background-color: #d62828;
+    transform: scale(1.05);
+  }
+  

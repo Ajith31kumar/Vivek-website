@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
-import './FAQSection.css';
+import './FaqSection.css';
 
-const FAQSection = () => {
+const FaqSection = () => {
   useEffect(() => {
     document.querySelectorAll('.faq-item button').forEach(button => {
       button.addEventListener('click', () => {
@@ -68,4 +68,4 @@ const FAQSection = () => {
   );
 };
 
-export default FAQSection;
+export default FaqSection;

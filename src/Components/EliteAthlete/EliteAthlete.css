@@ -1,0 +1,99 @@
+/* Registration Section */
+.registration-section {
+    position: relative;
+    padding: 80px 0;
+    background-color: #1f2937;
+    color: white;
+  }
+  
+  .container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+  
+  .content {
+    max-width: 640px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .heading-container {
+    margin-bottom: 48px;
+  }
+  
+  .main-heading {
+    font-size: 2.5rem;
+    font-weight: 800;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 24px;
+  }
+  
+  .highlight {
+    color: #e63946;
+  }
+  
+  .subheading {
+    font-size: 1.125rem;
+    color: #d1d5db;
+    margin-bottom: 32px;
+  }
+  
+  /* Countdown Timer */
+  .countdown-timer {
+    background-color: #1d3557;
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 48px;
+  }
+  
+  /* CTA Section */
+  .cta-container {
+    margin-top: 32px;
+  }
+  
+  .cta-message {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #06d6a0;
+    margin-bottom: 24px;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    background-color: #e63946;
+    color: white;
+    font-size: 1.125rem;
+    font-weight: 700;
+    padding: 16px 32px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .cta-button:hover {
+    background-color: #d42d2d;
+    transform: scale(1.05);
+  }
+  
+  /* Decorative Elements */
+  .background-decor-left,
+  .background-decor-right {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+  }
+  
+  .background-decor-left {
+    top: -40px;
+    left: -40px;
+  }
+  
+  .background-decor-right {
+    bottom: -40px;
+    right: -40px;
+  }
+  

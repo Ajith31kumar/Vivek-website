@@ -1,0 +1,140 @@
+#bonuses {
+    position: relative;
+    padding: 80px 0;
+    background-color: white;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 64px;
+  }
+  
+  .header h2 {
+    font-size: 36px;
+    font-weight: 800;
+    color: #2B2D42;
+    margin-bottom: 16px;
+  }
+  
+  .header p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #1D3557;
+  }
+  
+  .header .highlight {
+    color: #E63946;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 16px;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 32px;
+    margin-bottom: 64px;
+  }
+  
+  .bonus-card {
+    background: linear-gradient(135deg, #2B2D42, #333);
+    border-radius: 16px;
+    padding: 32px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .bonus-card:hover {
+    transform: translateY(-8px);
+  }
+  
+  .bonus-card .icon {
+    font-size: 36px;
+    color: #06D6A0;
+  }
+  
+  .bonus-card h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 16px;
+  }
+  
+  .bonus-card p {
+    font-size: 16px;
+    color: #D1D5DB;
+    margin-bottom: 16px;
+  }
+  
+  .bonus-card .value {
+    font-size: 18px;
+    color: #06D6A0;
+    font-weight: bold;
+  }
+  
+  .cta-section {
+    text-align: center;
+  }
+  
+  .cta-section p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2B2D42;
+  }
+  
+  .cta-section .total-value {
+    color: #E63946;
+    font-size: 28px;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    background-color: #E63946;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px 40px;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+    text-decoration: none;
+  }
+  
+  .cta-button:hover {
+    background-color: #D74E4E;
+    transform: scale(1.05);
+  }
+  
+  .cta-button:focus {
+    outline: none;
+  }
+  
+  .background-decorative {
+    position: absolute;
+    top: -40px;
+    left: -40px;
+    width: 160px;
+    height: 160px;
+    background-color: #1D3557;
+    opacity: 0.05;
+    border-radius: 50%;
+  }
+  
+  .background-decorative.right {
+    top: auto;
+    bottom: -40px;
+    left: auto;
+    right: -40px;
+    background-color: #E63946;
+    opacity: 0.05;
+    width: 192px;
+    height: 192px;
+    border-radius: 50%;
+  }
+  
