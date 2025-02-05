@@ -14,7 +14,7 @@ const Navbar = () => {
           <a href="#webinarDetails" className="navbar-link">Schedule</a>
           <a href="#credentials" className="navbar-link">About</a>
         </div>
-        <a href="#register" className="navbar-register">Register Now</a>
+        <a href="https://tagmango.app/36e3433a84" className="navbar-register">Register Now</a>
       </div>
     </nav>
   );

@@ -45,7 +45,7 @@ const Athlete = () => {
 
       <div className="cta-section">
         <p className="cta-text">🔥 If they can do it, so can you.</p>
-        <a href="#" className="cta-button">👉 Register Now & Get Started</a>
+        <a href="https://tagmango.app/36e3433a84" className="cta-button">👉 Register Now & Get Started</a>
       </div>
     </div>
   );

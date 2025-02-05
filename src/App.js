@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+
 import './App.css'; // Ensure you have a separate CSS file for styles
 import Navbar from './Components/navbar/Navbar'; // Import the Navbar component
 import Footer from './Components/Footer/Footer';

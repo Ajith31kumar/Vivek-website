@@ -41,7 +41,7 @@ const SolutionSection = () => {
           <p>
             💡<span className="highlight">This isn't just theory—it's science-backed, PROVEN training.</span>
           </p>
-          <a href="#" className="cta-button">
+          <a href="https://tagmango.app/36e3433a84" className="cta-button">
             👉 Reserve Your Free Spot Now
           </a>
         </div>
