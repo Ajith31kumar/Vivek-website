@@ -15,7 +15,7 @@ const CredentialsSection = () => {
 
         <div className="grid-container">
           {/* Credentials Grid */}
-          <div className="grid">
+          <div className="left-section">
             {[
               { icon: "🏆", title: "Certified Sports Optometrist", desc: "HAC Jerusalem" },
               { icon: "🎯", title: "Certified Bates Method Trainer", desc: "British School of Yoga" },
@@ -34,7 +34,7 @@ const CredentialsSection = () => {
           </div>
 
           {/* Results Grid */}
-          <div className="grid">
+          <div className="right-section">
             {[
               { icon: "👀", title: "Trained 40+ athletes", desc: "in 2 offline programs" },
               { icon: "🔥", title: "Success Stories", desc: "4 students permanently removed their glasses" },
