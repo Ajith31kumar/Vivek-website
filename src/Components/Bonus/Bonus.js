@@ -4,11 +4,11 @@ import "./Bonus.css"; // Importing the CSS file
 const Bonus = () => {
   return (
     <section id="bonuses" className="bonuses-section">
-      <div className="container">
+      <div className="container4">
         <div className="header">
           <h2>FAST START BUNDLE 🎁</h2>
           <p>💡 Master the #1 overlooked skill in sports—vision & brain training!</p>
-          <p className="highlight">WORTH ₹25,997 – FREE!</p>
+          <p className="highlight"><span class="highlight-3">WORTH ₹25,997 – FREE!</span></p>
         </div>
 
         <div className="grid">
@@ -42,7 +42,7 @@ const Bonus = () => {
         </div>
 
         <div className="cta-section">
-          <p className="total-value">💰 Total Value: ₹25,997</p>
+          <p className="total-value">💰<span class="highlight-6"> Total Value:</span><span class="highlight-3"> ₹25,997</span></p>
           <p>YOURS FREE TODAY!</p>
           <a href="https://tagmango.app/36e3433a84" className="cta-button">
             👉 Reserve Your Spot Now

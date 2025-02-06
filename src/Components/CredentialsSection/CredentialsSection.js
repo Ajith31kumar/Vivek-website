@@ -8,7 +8,7 @@ const CredentialsSection = () => {
       <div className="background-circle top-left"></div>
       <div className="background-circle bottom-right"></div>
 
-      <div className="container">
+      <div className="container1">
         <div className="text-center">
           <h2 className="title">Why Trust Me?</h2>
         </div>

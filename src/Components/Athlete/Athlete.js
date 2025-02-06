@@ -5,7 +5,7 @@ const Athlete = () => {
   return (
     <div className="container">
       <div className="header">
-        <h2>📢 Real Athletes, Real <span className="highlight">Results</span></h2>
+        <h2>📢 <span class="highlight-5">Real Athletes, Real</span> <span className="highlight">Results</span></h2>
       </div>
 
       <div className="slider">
@@ -36,15 +36,16 @@ const Athlete = () => {
             <div className="icon">💬</div>
             <p>"After using these drills, I make split-second plays without overthinking."</p>
             <div className="athlete-info">
-              <p className="role">Amateur Athlete</p>
+            <p className="role">Amateur Athlete</p>
               <p className="sport">Basketball Player</p>
-            </div>
+
+           </div>
           </div>
         </div>
       </div>
 
       <div className="cta-section">
-        <p className="cta-text">🔥 If they can do it, so can you.</p>
+        <p className="cta-text">🔥<span class="highlight-2">If they can do it, so can you.</span> </p>
         <a href="https://tagmango.app/36e3433a84" className="cta-button">👉 Register Now & Get Started</a>
       </div>
     </div>
