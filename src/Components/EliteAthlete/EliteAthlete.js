@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
-import "./EliteAthlete.css";
+import "./EliteAthlete.css"; // CSS File Import
 
+// Countdown Timer Component
 const CountdownTimer = ({ targetDate }) => {
   const calculateTimeLeft = () => {
     const difference = +new Date(targetDate) - +new Date();
@@ -33,6 +34,7 @@ const CountdownTimer = ({ targetDate }) => {
   );
 };
 
+// Registration Section Component
 const RegistrationSection = () => {
   const targetDate = new Date();
   targetDate.setDate(targetDate.getDate() + 3);
@@ -51,11 +53,10 @@ const RegistrationSection = () => {
           smarter decisions, and better performance.
         </p>
 
-        <div className="countdown-box">
-  <p className="pots-text">⏳ LIMITED SPOTS REMAINING</p>
-<CountdownTimer targetDate={targetDate} />
-</div>
-
+        <div className="countdown-box1">
+          <p className="spots-text">⏳ LIMITED SPOTS REMAINING</p>
+          <CountdownTimer targetDate={targetDate} />
+        </div>
 
         <p className="cta-text">
           📌 LIMITED SPOTS LEFT! Sign up NOW before it's too late!
@@ -64,6 +65,9 @@ const RegistrationSection = () => {
         <a href="https://tagmango.app/36e3433a84" className="cta-button">
           👉 JOIN NOW – 100% FREE
         </a>
+        <p class="text-sm">
+            By clicking the button, you'll be redirected to our secure registration page
+          </p>
       </div>
     </section>
   );

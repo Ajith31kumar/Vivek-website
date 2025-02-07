@@ -1,72 +1,52 @@
-import React, { useEffect } from 'react';
+import React from "react";
+import "./footer.css"; // Import the CSS file
 
 const Footer = () => {
-  useEffect(() => {
-    const backToTopButton = document.getElementById("backToTop");
-
-    // Scroll to top functionality
-    backToTopButton.addEventListener("click", () => {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-      });
-    });
-
-    return () => {
-      backToTopButton.removeEventListener("click", () => {});
-    };
-  }, []);
-
   return (
-    <div>
-      {/* Footer Section */}
+    <div className="footer-container">
+      {/* Top Section */}
       <div className="footer-top">
+        {/* Brand Section */}
         <div className="footer-brand">
-          <h3 className="footer-brand-title">Forge Your Peak</h3>
-          <p className="footer-brand-description">
-            Transforming athletes through advanced vision &amp; cognitive training
-          </p>
+          <h3>Forge Your Peak</h3>
+          <p>Transforming athletes through advanced vision & cognitive training</p>
         </div>
 
+        {/* Quick Links */}
         <div className="footer-links">
-          <h4 className="footer-links-title">Quick Links</h4>
-          <ul className="footer-links-list">
-            <li><a href="#webinarDetails" className="footer-link">Webinar Details</a></li>
-            <li><a href="#benefits" className="footer-link">Benefits</a></li>
-            <li><a href="#bonuses" className="footer-link">Bonuses</a></li>
-            <li><a href="#faq" className="footer-link">FAQs</a></li>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#webinarDetails">Webinar Details</a></li>
+            <li><a href="#benefits">Benefits</a></li>
+            <li><a href="#bonuses">Bonuses</a></li>
+            <li><a href="#faq">FAQs</a></li>
           </ul>
         </div>
 
+        {/* Register CTA */}
         <div className="footer-cta">
-          <h4 className="footer-cta-title">Ready to Level Up?</h4>
-          <a href="https://tagmango.app/36e3433a84" className="footer-register-button">
-            Register Now
-          </a>
+          <h4>Ready to Level Up?</h4>
+          <a href="https://tagmango.app/36e3433a84" className="register-btn">Register Now</a>
         </div>
       </div>
 
+      {/* Bottom Section */}
       <div className="footer-bottom">
-        <p className="footer-bottom-text">
-          © 2024 Forge Your Peak. All rights reserved.
-        </p>
-        <div className="footer-bottom-links">
-          <a href="#" className="footer-bottom-link">Privacy Policy</a>
-          <span className="footer-bottom-separator">|</span>
-          <a href="#" className="footer-bottom-link">Terms of Service</a>
-          <span className="footer-bottom-separator">|</span>
-          <a href="#" className="footer-bottom-link">Contact Us</a>
+        <p>© 2024 Forge Your Peak. All rights reserved.</p>
+        <div className="footer-policies">
+          <a href="#">Privacy Policy</a> | 
+          <a href="#">Terms of Service</a> | 
+          <a href="#">Contact Us</a>
         </div>
         <p className="footer-disclaimer">
           Disclaimer: Results may vary. Commitment to training required for optimal performance gains.
         </p>
       </div>
 
-      <div className="footer-back-to-top">
-        <button id="backToTop" className="back-to-top-button" aria-label="Back to top">
-          <svg className="back-to-top-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
-          </svg>
+      {/* Back to Top Button */}
+      <div className="back-to-top">
+        <button id="backToTop" aria-label="Back to top">
+          ↑
         </button>
       </div>
     </div>
