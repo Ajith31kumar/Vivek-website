@@ -2,46 +2,54 @@ import React, { useState, useEffect } from "react";
 import "./EliteAthlete.css"; // CSS File Import
 
 // Countdown Timer Component
-const CountdownTimer = ({ targetDate }) => {
-  const calculateTimeLeft = () => {
-    const difference = +new Date(targetDate) - +new Date();
-    if (difference <= 0) return { days: "00", hours: "00", minutes: "00", seconds: "00" };
-
-    return {
-      days: String(Math.floor(difference / (1000 * 60 * 60 * 24))).padStart(2, "0"),
-      hours: String(Math.floor((difference / (1000 * 60 * 60)) % 24)).padStart(2, "0"),
-      minutes: String(Math.floor((difference / 1000 / 60) % 60)).padStart(2, "0"),
-      seconds: String(Math.floor((difference / 1000) % 60)).padStart(2, "0"),
-    };
-  };
-
-  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+const CountdownTimer = () => {
+  const targetDate = new Date("2025-02-09T19:00:00").getTime();
+  const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
 
   useEffect(() => {
-    const timer = setInterval(() => setTimeLeft(calculateTimeLeft()), 1000);
+    const timer = setInterval(() => {
+      const now = new Date().getTime();
+      const difference = targetDate - now;
+
+      if (difference > 0) {
+        setTimeLeft({
+          days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+          hours: Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+          minutes: Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60)),
+          seconds: Math.floor((difference % (1000 * 60)) / 1000),
+        });
+      } else {
+        clearInterval(timer);
+      }
+    }, 1000);
+
     return () => clearInterval(timer);
-  }, [targetDate]);
+  }, []);
 
   return (
     <div className="timer-container">
-      {Object.entries(timeLeft).map(([key, value]) => (
-        <div key={key} className="timer-box">
-          <span className="timer-value">{value}</span>
-          <p className="timer-label">{key}</p>
-        </div>
-      ))}
+      <div className="timer-box">
+        <span className="timer-value">{timeLeft.days}</span>
+        <p className="timer-label">Days</p>
+      </div>
+      <div className="timer-box">
+        <span className="timer-value">{timeLeft.hours}</span>
+        <p className="timer-label">Hours</p>
+      </div>
+      <div className="timer-box">
+        <span className="timer-value">{timeLeft.minutes}</span>
+        <p className="timer-label">Minutes</p>
+      </div>
+      <div className="timer-box">
+        <span className="timer-value">{timeLeft.seconds}</span>
+        <p className="timer-label">Seconds</p>
+      </div>
     </div>
   );
 };
 
 // Registration Section Component
 const RegistrationSection = () => {
-  const targetDate = new Date();
-  targetDate.setDate(targetDate.getDate() + 3);
-  targetDate.setHours(targetDate.getHours() + 9);
-  targetDate.setMinutes(targetDate.getMinutes() + 2);
-  targetDate.setSeconds(targetDate.getSeconds() + 2);
-
   return (
     <section className="registration-container">
       <div className="content-wrapper">
@@ -55,7 +63,7 @@ const RegistrationSection = () => {
 
         <div className="countdown-box1">
           <p className="spots-text">⏳ LIMITED SPOTS REMAINING</p>
-          <CountdownTimer targetDate={targetDate} />
+          <CountdownTimer />
         </div>
 
         <p className="cta-text">
@@ -65,9 +73,9 @@ const RegistrationSection = () => {
         <a href="https://tagmango.app/36e3433a84" className="cta-button">
           👉 JOIN NOW – 100% FREE
         </a>
-        <p class="text-sm">
-            By clicking the button, you'll be redirected to our secure registration page
-          </p>
+        <p className="text-sm">
+          By clicking the button, you'll be redirected to our secure registration page
+        </p>
       </div>
     </section>
   );

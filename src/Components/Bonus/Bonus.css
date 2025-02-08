@@ -169,6 +169,80 @@
   animation: fadeInUp 1s ease-in-out;
 }
 
+/* Responsive Design for All Devices */
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr; /* Single column layout for tablets */
+  }
+
+  .bonus-card {
+    max-width: 90%;
+    padding: 18px; /* Adjust padding */
+    min-height: auto; /* Allow dynamic height */
+  }
+
+  .bonus-card h3 {
+    font-size: 20px;
+  }
+
+  .bonus-card p {
+    font-size: 14px;
+  }
+
+  .bonus-card .value {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr; /* Single column for mobile */
+    max-width: 95%;
+  }
+
+  .bonus-card {
+    max-width: 100%;
+    padding: 14px; /* Reduce padding */
+  }
+
+  .bonus-card h3 {
+    font-size: 18px;
+  }
+
+  .bonus-card p {
+    font-size: 13px;
+  }
+
+  .bonus-card .value {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .bonus-card {
+    padding: 12px;
+  }
+
+  .bonus-card h3 {
+    font-size: 16px;
+  }
+
+  .bonus-card p {
+    font-size: 12px;
+  }
+
+  .bonus-card .value {
+    font-size: 13px;
+  }
+
+  .total-value {
+    font-size: 20px;
+  }
+
+  .cta-section p {
+    font-size: 18px;
+  }
+}
 
 
 

@@ -150,5 +150,61 @@
   margin-left: 680px;
   margin-top: -310px; /* Optional: Add margin if needed to separate from the left content */
 }
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .problem-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .problem-cta {
+    margin-left: 0;
+    margin-top: 20px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .problem-title {
+    font-size: 1.8rem;
+  }
+
+  .problem-item {
+    max-width: 90%;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .problem-icon {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .problem-btn {
+    font-size: 18px;
+    padding: 12px 30px;
+  }
+
+  .problem-cta {
+    max-width: 90%;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .problem-title {
+    font-size: 1.5rem;
+  }
+
+  .problem-description {
+    font-size: 16px;
+  }
+
+  .problem-btn {
+    font-size: 16px;
+    padding: 10px 25px;
+  }
+}
 
 

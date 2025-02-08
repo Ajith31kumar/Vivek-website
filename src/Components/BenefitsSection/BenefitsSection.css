@@ -6,7 +6,6 @@
   color: white;
 }
 
-
   .container2 {
     max-width: 1280px;
     margin: 0 auto;
@@ -14,7 +13,6 @@
     color: #1a1a1a;
   }
   
-
 
 .header {
   text-align: center;
@@ -189,5 +187,88 @@
   }
   100% {
     opacity: 1;
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .benefits-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .benefit-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .performance-metrics {
+    padding: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .benefits-section {
+    padding: 60px 0;
+  }
+
+  .header-title {
+    font-size: 28px;
+  }
+
+  .benefit-item {
+    padding: 20px;
+  }
+
+  .performance-metrics {
+    padding: 20px;
+  }
+
+  .cta-text {
+    font-size: 18px;
+  }
+
+  .cta-button {
+    padding: 14px 28px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container2 {
+    padding: 0 12px;
+  }
+
+  .header-title {
+    font-size: 24px;
+  }
+
+  .benefit-item {
+    padding: 16px;
+  }
+
+  .benefit-title {
+    font-size: 18px;
+  }
+
+  .benefit-description {
+    font-size: 14px;
+  }
+
+  .performance-metrics {
+    padding: 16px;
+  }
+
+  .metric-value {
+    font-size: 28px;
+  }
+
+  .metric-description {
+    font-size: 14px;
+  }
+
+  .cta-button {
+    padding: 12px 24px;
+    font-size: 14px;
   }
 }

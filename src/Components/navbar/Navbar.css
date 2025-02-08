@@ -1,90 +1,138 @@
-/* Make the navbar span full width */
+/* Navbar Styling */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #000;  /* Black background */
-    padding: 20px 40px;
-    font-family: 'Roboto', sans-serif;
-    width: 100%;  /* Full width */
-    position: fixed;  /* Fix the navbar at the top */
-    top: 0;  /* Align at the top */
-    left: 0;  /* Ensure full width */
-    z-index: 1000;  /* Ensure it stays on top of other content */
-  }
-  
-  /* Brand styling */
-  .navbar-brand-container {
-    display: flex;
-    justify-content: flex-start;
-    flex: 1;
-  }
-  
-  .navbar-brand {
-    font-size: 28px;
-    color: #fff;
-    font-weight: 700;
-  }
-  
-  /* Center the navbar links */
-  .navbar-links-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;  /* Center the links */
-    flex: 1;  /* Allow the links to take up the remaining space */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;  /* Black background */
+  padding: 20px 40px;
+  font-family: 'Roboto', sans-serif;
+  width: 100%;  /* Full width */
+  position: fixed;  /* Fix the navbar at the top */
+  top: 0;
+  left: 0;
+  z-index: 1000;  /* Ensure it stays on top */
+}
+
+/* Brand styling */
+.navbar-brand-container {
+  display: flex;
+  justify-content: flex-start;
+  flex: 1;
+}
+
+.navbar-brand {
+  font-size: 28px;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* Navbar Links */
+.navbar-links-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;  /* Center the links */
+  flex: 1;  
+}
+
+.navbar-links {
+  display: flex;
+  gap: 25px;
+}
+
+.navbar-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-link:hover {
+  color: #FF6347;  /* Light red hover effect */
+}
+
+/* Register Button */
+.navbar-register {
+  padding: 12px 25px;
+  background-color: #FF6347;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  margin-left: 30px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.navbar-register:hover {
+  background-color: #E5533B;  /* Darker red on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .navbar {
+      padding: 15px 30px;
   }
   
   .navbar-links {
-    display: flex;
-    gap: 25px;
+      gap: 20px;
   }
-  
-  .navbar-link {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 500;
-    transition: color 0.3s;
-  }
-  
-  .navbar-link:hover {
-    color: #ff6347;  /* Light red hover effect */
-  }
-  
-  /* Register button styling */
+
   .navbar-register {
-    padding: 12px 25px;
-    background-color: #ff6347;
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 600;
-    border-radius: 5px;
-    margin-left: 30px;
-    transition: background-color 0.3s;
+      font-size: 16px;
+      padding: 10px 20px;
   }
-  
-  .navbar-register:hover {
-    background-color: #e5533b;  /* Darker red on hover */
-  }
-  
-  /* Responsive Design */
-  @media screen and (max-width: 768px) {
-    .navbar {
+}
+
+@media (max-width: 768px) {
+  .navbar {
       flex-direction: column;
       align-items: flex-start;
-      padding: 15px 20px;  /* Reduce padding for smaller screens */
-    }
-  
-    .navbar-links {
+      padding: 15px 20px;
+  }
+
+  .navbar-links-container {
+      width: 100%;
+      justify-content: flex-start;
+      margin-top: 10px;
+  }
+
+  .navbar-links {
       flex-direction: column;
-      gap: 12px;
-      margin-top: 15px;
-    }
-  
-    .navbar-register {
+      gap: 10px;
+  }
+
+  .navbar-link {
+      font-size: 16px;
+  }
+
+  .navbar-register {
       margin-top: 10px;
       padding: 10px 18px;
-    }
+      font-size: 16px;
   }
-  
+}
+
+@media (max-width: 480px) {
+  .navbar {
+      padding: 10px 15px;
+  }
+
+  .navbar-brand {
+      font-size: 24px;
+  }
+
+  .navbar-links {
+      gap: 8px;
+  }
+
+  .navbar-link {
+      font-size: 15px;
+  }
+
+  .navbar-register {
+      padding: 8px 15px;
+      font-size: 15px;
+  }
+}

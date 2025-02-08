@@ -12,9 +12,9 @@ const Athlete = () => {
         <div className="slide">
           <div className="testimonial">
             <div className="icon">💬</div>
-            <p>"My reaction speed improved drastically! I play more confidently now."</p>
+            <p>"This eye program greatly improved my vision for cricket, and the mentor's guidance was exceptional. Ditching my eyeglasses was a truly liberating experience!"</p>
             <div className="athlete-info">
-              <p className="role">Professional Athlete</p>
+              <p className="role">Professional Cricket Player</p>
               <p className="sport">Cricket Player</p>
             </div>
           </div>
@@ -23,10 +23,10 @@ const Athlete = () => {
         <div className="slide">
           <div className="testimonial">
             <div className="icon">💬</div>
-            <p>"This training helped me see and track the ball way faster than before!"</p>
+            <p>"This Eye-Hand Coordination Workshop transformed my reflexes, vision, and focus in cricket. My eyesight improved, and my reaction time became sharper, enhancing my overall performance."</p>
             <div className="athlete-info">
-              <p className="role">Semi-Pro Athlete</p>
-              <p className="sport">Tennis Player</p>
+              <p className="role">Professional Cricket Player</p>
+              <p className="sport">Cricket Player</p>
             </div>
           </div>
         </div>
@@ -34,10 +34,10 @@ const Athlete = () => {
         <div className="slide">
           <div className="testimonial">
             <div className="icon">💬</div>
-            <p>"After using these drills, I make split-second plays without overthinking."</p>
+            <p>"The EyeQ program greatly improved my vision, reaction time, and hand-eye coordination. I can now track the ball better, judge distances accurately, and react faster on the field."</p>
             <div className="athlete-info">
-            <p className="role">Amateur Athlete</p>
-              <p className="sport">Basketball Player</p>
+            <p className="role">Professional Cricket Player</p>
+              <p className="sport">Cricket Player</p>
 
            </div>
           </div>
