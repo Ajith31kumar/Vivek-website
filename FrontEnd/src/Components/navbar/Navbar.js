@@ -1,5 +1,6 @@
-import React from 'react';
-import './Navbar.css'; // Ensure this file exists in the correct location
+import React from "react";
+import { Link } from "react-router-dom";
+import "./Navbar.css";
 
 const Navbar = () => {
   return (
@@ -11,6 +12,7 @@ const Navbar = () => {
         <div className="navbar-links">
           <a href="#problem" className="navbar-link">Why Us</a>
           <a href="#solution" className="navbar-link">Benefits</a>
+          <Link to="/reactiongame" className="navbar-link">ReactionGame</Link>
           <a href="#webinarDetails" className="navbar-link">Schedule</a>
           <a href="#credentials" className="navbar-link">About</a>
         </div>
